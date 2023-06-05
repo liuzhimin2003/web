@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page5</title>
+  <style type="text/css">
+	*{
+	margin : 0 ;
+	padding : 0 ;
+	}
+	li{
+	list-style : none ;
+	}
+	a{
+	text-decoration : none ;
+	}
+	.wrapper{
+	width : 1000px ;
+	margin : 0 auto ; /* 盒子居中*/
+	}
+	.header{
+	height : 60px ;
+	margin : 40px auto 25px auto;
+	}
+	.header img{
+	height : 60px ;
+	float : left ;
+	}
+    .header ul li{
+	float : right ;
+	padding : 0 ;
+	margin-top : 5px ;
+	font-size : 12px ;
+	}
+	.header ul li a{
+	border-right : 1px solid black ;
+	padding : 0 15px ;
+	}
+	.nav h2 {
+	float : left ;
+	border-bottom : 1px solid ;
+	font-size : 12px ;
+	}
+	.nav ul a{
+	padding : 10px ;
+	margin-left : 10px ;
+	}
+	.nav .left li{
+	float : left ;
+    font-size : 12px ;
+	margin-bottom : 25px ;
+	}
+	.nav .right li{
+	float : right ;
+	font-size : 12px ;
+	margin-bottom : 25px ;
+	}
+	.nav .right .store{
+	border-left : 1px solid black ;
+	}
+	#box1{
+	margin : 0 auto ;
+	width : 1100px ;
+	position : relative ;
+	}
+	#box1 .small{
+	height : 100px ;
+	background-color : rgba(0,0,0,0.5) ;
+	width : 1100px ;
+	position : absolute ;
+    bottom : 0 ;
+	left : 0 ;
+	}
+    #box1 .small a{
+	display : inline-block ;
+	font-size : 25px ; 
+	font-family : "幼圆" ;
+	color : white ;
+    position : relative ;
+	top : 30px ;
+	left : 20px ;
+	}
+	.new{
+	overflow : hidden ;
+	}
+	.new h2{
+	display : block ;
+	height : 43px ;
+	margin-top : 60px ;
+	margin-bottom : 55px ;
+	font-size : 1.8em ;
+	text-align : center ;
+	}
+	.new .n1{
+	width : 480px ;
+	margin-bottom : 35px ;
+	float : left ;
+	}
+	.new .n1 h3{
+	font-size : 25px ;
+	margin : 10px 0;
+	}
+    .new .n1 p{
+	font-size : 1.2em ;
+	color : #c0c0c0 ;
+	}
+	.new .n2{
+	width : 480px ;
+	float : right ;
+	}
+	.new .n2 h3{
+	font-size : 25px ;
+	margin : 10px 0;
+	}
+    .new .n2 p{
+	font-size : 1.2em ;
+	color : #c0c0c0 ;
+	}
+	.new .n3{
+	width : 600px;
+	float : left ;
+	}
+	.new .n3 h3{
+	font-size : 25px ;
+	margin : 10px 0;
+	}
+    .new .n3 p{
+	font-size : 1.2em ;
+	color : #c0c0c0 ;
+	margin-bottom : 50px ; 
+	}
+    .new .n4{
+	float : right ;
+	}
+	.sta{
+	width : 1100px ;
+	height : 630px ;
+	margin : 0 auto ;
+	background-image : url(https://www.realmadrid.com/img/sc_1920px/fondobernabeu_20220706023515.jpg);
+	background-size : 100% ;
+	}
+	.sta .top{
+	height : 200px ;
+	width : 950px ;
+	margin : 0 auto ;
+	text-align : center ;
+	padding : 30px ;
+	}
+	.sta .top h2{
+	display : block ;
+	font-size : 30px ;
+	line-height : 30px ;
+	color : white ;
+	}
+    .sta .top h3{
+	display : block ;
+	font-size : 16px ;
+	color : white ;
+	line-height : 20px ;
+	}
+	.sta .top a{
+	display: inline-block;
+	height : 30px ;
+	width : 100px ;
+	color : #000 ;
+	background-color : white ;
+	font-size : 20px ;
+	text-align : center ;
+	border-radius : 20px ;
+	float : right ;
+	margin-bottom : 50px ;
+	}
+	.sta .item{
+	height : 360px ;
+	}
+	.sta .item ul li{
+	display : inline-block ;
+	width : 350px ;
+	height : 361px ;
+	float : left ;
+	margin : 8px;
+	}
+	#player {
+	margin-top : 150px ;
+	text-align : center ;
+	}
+    #player ul{
+	display : block ;
+	height : 365px ;
+	}
+	#player ul li{
+	display : inline-block ;
+	margin : 50px auto 10px auto;
+	border : 2px solid #c0c0c0 ;
+    transition-duration : 1.5s ;
+	position : relative ;
+	}
+	#player ul li:hover{
+	background-color : #333333 ;
+	border-color : black ;
+	border-radius : 20px ;
+	}
+	#player ul li .name{
+	position : absolute ;
+	right : 0 ;
+	top : 0 ;
+	font-size : 24px;
+	font-family :"幼圆";
+	font-weight : bold ;
+	padding : 3px ;
+	}
+	.shop {
+	width : 1100px ;
+	margin: 120px auto ;
+	position : relative ;
+	}
+	.shop .ben{
+	position : absolute ;
+	top : 50px ;
+	right : 0 ;
+	height : 67px ;
+	width : 800px ;
+	font-size : 18px ;
+	}
+	.shop .ben a{
+	display : block ;
+	position : absolute ;
+	right : 18px ;
+	bottom : 0 ;
+	width : 110px ;
+	height : 25px ;
+	color : white ;
+	padding : 8px ;
+	border : 2px solid white ;
+	border-radius : 15px ;
+	transition-duration : 1s ;
+	}
+	.shop .ben a:hover{
+	border-color : #cc99ff ; 
+	}
+	.shop .goods{
+	position : absolute ;
+	bottom : 0 ;
+	right : 0 ;
+	}
+	.shop .goods ul li{
+	float : left ;
+	display : block ;
+	height : 350px ;
+	width : 310px ;
+	margin : 5px ;
+	background-color : white ; 
+	transition-duration : 1.5s ;
+	border : 3px solid gray ;
+	}
+    .shop .goods ul li:hover{
+	border-radius : 0 0 25px 25px ;
+	background-color : #e2e2e2 ;
+	border-color : #ff0080 ;
+	}
+	.shop .goods ul li p{
+	font-size : 25px ;
+    margin-top : 20px ;
+	font-family : sans-serif ;
+	padding : 10px ;
+	color : black ;
+	}
+	footer{
+	display : block ;
+	}
+	footer .t{
+	width : 1100px; 
+	height : 178px ;
+	border-top : 1px solid gray ;
+	border-bottom : 1px solid gray ;
+	}
+	footer .t ul{
+	display : block ;
+	width : 960px ;
+	height : 35px ;
+	text-align : center ;
+	margin-top : 50px ;
+	}
+	footer .t ul li{
+	display : inline-block ;
+	margin-left : 20px ;
+	}
+	footer .b{
+	height : 246px ;
+	width : 960px ;
+	margin : 0 auto ;
+	border-bottom : 2px solid gray ;
+	position : relative ;
+	}
+	footer .b a{
+	display : block ;
+	color : rgb(153, 153, 153) ;
+	margin-top : 55px ;
+	transition-duration : 1s ;
+	}
+	footer .b a:hover{
+	color : black ;
+	font-weight : 900 ;
+	}
+	footer .b .l{
+	float : left ;
+	width : 320px ;
+	color : rgb(153, 153, 153) ;
+	}
+	footer .b .m{
+    float : left ;
+	width : 320px ;
+	color : rgb(153, 153, 153) ;
+	}
+	footer .b .r{
+	float : right ;
+	width : 320px ;
+	color : rgb(153, 153, 153) ;
+	}
+	footer .b ul{
+	display : block ;
+	margin-top : 10px ;
+	height : 133px ;
+	}
+	footer .b #hm{
+	display : block ;
+	width : 80px ;
+	background-color : #ccccff ;
+	position  : absolute ;
+	right : 0 ;
+	bottom : 45px ;
+	}
+  </style>
+ </head>
+ <body>
+  <div class="header wrapper">
+	<a href="#"><img src="img/madrid.jpg"></a>
+	<ul>
+		<li><a href="#">中文 ^</a></li>
+		<li><a href="#">伯纳乌之旅</a></li>
+		<li><a href="#">Madridistas</a></li>
+		<li><a href="#">荣誉室</a></li>
+	</ul>
+  </div>
+  <div class="nav wrapper">	
+    <h2><a href="#">首页</a></h2>
+    <ul class="left">
+		<li><a href="#">球队</a></li>
+		<li><a href="#">俱乐部</a></li>
+		<li><a href="#">球迷天地</a></li>
+		<li><a href="#">伯纳乌球场</a></li>
+	</ul>
+	<ul class="right">
+		<li class="store"><a href="#">商店</a></li>
+		<li><a href="#">票务</a></li>
+	</ul>
+  </div>
+  <div id="box1">
+	<img src="http://hm-cdn.jyapi.cn/realmadrid_cont_album_168370278337409.jpg" width="1100px">
+	<div id="" class="small">
+		<a href="#">维尼修斯穿云箭，皇马首回合1—1曼城</a>
+	</div>
+  </div>
+  <div class="new wrapper">
+	<h2>新闻</h2>
+	<div class="n1">
+		<a href="#">
+		<img src="img\_1VC5762_Thumb.jpg"width="480px">
+		</a> 
+		<h3>Real Madrid begin preparations for Getafe game</h3>
+		<p>Ancelotti's team play LaLiga matchday 34 at the Santiago Bernabéu (Saturday, 9:00pm CEST)</p>
+	</div>
+	<div class="n2">
+		<a href="#"><img src="img\_MJ16116Thumb.jpg" width="480px"></a>
+		<h3>Real Madrid visit Valencia Basket today</h3>
+		<p>Our team play League matchday 32 at La Fonteta (9:00pm CEST).</p>
+	</div>
+	<div class="n3">
+		<a href="#"><img src="img\DI-STEFANO-Y-CANTERANO_Thumb.jpg" width="600px"></a>
+		<h3>The cornerstone for Real Madrid Sport City was laid 19 years ago</h3>
+		<p> Alfredo Di Stéfano and Carvajal took centre stage at this historic event on 12 May 2004</p>
+	</div>
+	<div class="n4">
+		<a href="https://www.adidas.com.cn/" target="_blank">
+		<img src="img\adidas.jpg" width="266px">
+		</a>
+	</div>
+  </div>
+  <div class="sta">
+	 <div class="top">
+		<h2>Santiago Bernabéu Stadium</h2>
+		<h3>VIEW THE STADIUM REDEVELOPMENT WORK</h3>
+		<a href="#">see more</a>
+	 </div>
+	 <div class="item">
+	  <ul>
+		<li>
+		  <img src="img\MAQUETA_estadio_1440x500_2Thumb,3.jpg" width="350px">
+		  <h2>VIEW THE STADIUM REDEVELOPMENT WORK</h2>
+		</li>
+		<li>
+		  <img src="img\OBRAS-ESTADIO_0VC9247_hThumb,3.jpg" width="350px">
+          <h2>The Santiago Bernabéu of the 21st century: the roof beam and the impressive under-soil heating system are progressing.</h2>
+		</li>
+		<li>
+		  <img src="img\castellana-ndThumb,13.jpg" width="350px">
+		  <h2>All of the latest news on the Santiago Bernabéu of the 21st century</h2>
+		</li>
+	  </ul>
+  </div>
+  <div id="player" class="wrapper">
+    <h2>PLAYERS</h2>
+	<ul>
+		<li>
+		 <a href="#"><img src="img\MODRIC_550x650.png" width="240px"></a>
+          <div id="" class="name">
+			莫德里奇 <br> 10
+          </div>
+		</li>
+		<li>
+		 <a href="#"><img src="img\ASENSIo_550x650,0.png" width="240px"></a>
+		  <div id="" class="name">
+			阿森西奥 <br> 11
+		  </div>
+		</li>
+		<li>
+		 <a href="#"><img src="img\BENZEMA_550x650.png" width="240px"></a>
+	      <div id="" class="name">
+			本泽马 <br> 9
+	      </div>	
+		</li>
+        <li>
+		 <a href="#"><img src="img\VINICIUS_550x650.png" width="240px"></a>
+		  <div id="" class="name">
+			维尼修斯 <br> 20
+		  </div>
+		</li>
+	</ul>
+  </div>
+  <div class="shop">
+	<img src="img\bg_camiseta22-23Thumb.jpg " width="1100px">
+	<div id="" class="ben">
+	 <h2>KITS 22/23 </h2>
+	 <h3>OFFICIAL KITS FOR THE 22/23 SEASON</h3>
+	 <a href="#">BUY NOW ></a>
+	</div>
+	<div id="" class="goods">
+	 <ul>
+		<li>
+		 <a href="#">
+		  <img src="img\home-524x296.jpeg" width="310px">
+          <p>Mens Home Shirt <br> JERSEY 22/23 White</p>
+		 </a>
+		</li>
+		<li>
+		 <a href="#">
+		  <img src="img\home-524x296.jpeg" width="310px">
+          <p>Mens Home Shirt <br> JERSEY 22/23 White</p>
+		 </a>
+		</li>
+		<li>
+		 <a href="#"> 
+		  <img src="img\home-524x296.jpeg" width="310px">
+		  <p>Mens Home Shirt <br> JERSEY 22/23 White</p>
+		 </a>
+		</li>
+	 </ul>
+	</div>
+  </div>
+  <footer>
+   <div id="" class="t">
+	<ul>
+		<li><a href="#"><img src="img/wechat.jpg"></a></li>
+		<li><a href="#"><img src="img/wechat.jpg"></a></li>
+		<li><a href="#"><img src="img/wechat.jpg"></a></li>
+		<li><a href="#"><img src="img/wechat.jpg"></a></li>
+		<li><a href="#"><img src="img/wechat.jpg"></a></li>
+	</ul>
+	
+   </div>
+   <div id="" class="b">
+	 <div id="" class="l">
+		<a href="#">球队</a>
+		<ul>
+			<li>赛程</li>
+			<li>新闻</li>
+			<li>视频</li>
+			<li>照片</li>
+			<li>阵容</li>
+		</ul>
+	 </div>
+	 <div id="" class="m">
+		<a href="#">俱乐部</a>
+		<ul>
+			<li>组织架构</li>
+			<li>荣誉室</li>
+			<li>俱乐部历史</li>
+			<li>伯纳乌球场</li>
+		</ul>
+	 </div>
+	 <div id="" class="r">
+		<a href="#">球迷天地</a>
+		<ul>
+			<li>球迷俱乐部</li>
+			<li>社交网络</li>
+		</ul>
+		<a href="https://www.realmadrid.cn/" target="_blank" id="hm"><img src="img\realmadrid.png" width="80px"></a>
+	 </div>
+   </div>
+  </footer>
+ </body>
+</html>

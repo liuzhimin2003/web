@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>五一作业</title>
+  <style type="text/css">
+	body{
+	background-color : orange ;
+	}
+	#header{
+	text-align : center ;
+	}
+	#box1{
+	font-size : 30px ;
+	text-align : center ;
+	text-shadow : 2px 2px 3px #888 ;
+	border : 3px solid #ffff00 ;
+	background-color : #00ffff ;
+	height : 30px ;
+	width : 150px ;
+	margin : 15px auto 20px auto;/* 四周边距 */
+	padding : 15px ;/* 内边距 */
+	}
+    #box2{
+	height : 60px ;
+	width : 800px ;
+	margin :5px auto ;
+	}
+	.love{
+	font-size : 30px ;
+	text-align : center ;
+	display : inline-block ;
+	border : 1px solid #eaadea ;
+	border-radius : 15px ;
+	height : 30px ;
+	margin : 5px ;
+	padding : 10px ;
+	float : left ;
+	background-color : #eaadea ;
+	box-shadow : 5px 5px 10px beige ;
+	}
+	.left{
+	font-size : 30px ;
+	text-align : center ;
+	color : white ;
+	display : inline-block ;
+	background-color : #ff1cae ;
+	border : 1px solid black ;
+    border-radius : 15px ;
+	height : 30px ;
+	width : 150px ;
+	margin : 5px ;
+	padding : 10px ;
+	float: left ;
+	box-shadow : 10px 5px 10px beige ;
+	}
+	.right{
+	font-size : 30px ;
+	text-align : center ;
+	display : inline-block ;
+	border : 1px solid #eaadea ;
+	border-radius : 15px ;
+	height : 30px ;
+	margin : 5px ;
+	padding : 10px ;
+	background-color : #eaadea ;
+	float : right ;
+	box-shadow : 10px 5px 10px beige ;
+	}
+	.you{
+	font-size : 30px ;
+	text-align : center ;
+	color : white ;
+	display : inline-block ;
+	background-color : #ff1cae ;
+	border : 1px solid black ;
+    border-radius : 15px ;
+	height : 30px ;
+	width : 150px ;
+	margin : 5px ;
+	padding : 10px ;
+	float: right ;
+	box-shadow : 5px 5px 10px beige ;
+	}
+	#box3{
+	height : 60px ;
+	width : 900px ;
+	margin :10px auto ;
+	}
+	#box4{
+	height : 60px ;
+	width : 800px ;
+	margin : 5px auto ;
+	}
+	#box5{
+	text-align : center ;
+	margin : 15px ;
+	}
+	#box6{
+	background-color : #00ff7f ;
+	height : 650px ;
+	width : 900px ;
+	margin : 10px auto 20px auto ;
+	}
+	#box7{
+	font-size : 30px ;
+	text-align : center ;
+	border : 2px solid pink ;
+	background-color : #00ffff ;
+	height : 30px ;
+	width : 150px ;
+	margin : 20px auto 30px auto;
+	padding : 15px ;
+	}
+	.li{
+	font-size : 30px ;
+	font-family : "幼圆" ;
+	font-weight : 900 ;
+	background-color : yellow ;
+	border : 1px solid yellow ;
+	border-radius : 10px ;
+	height : 40px ;
+    padding : 10px ;
+	margin : 8px ;
+	float : left ;
+	}
+	#work{
+	float : right ;
+	}
+	#ke{
+	font-size : 25px ;
+	color : #871f78 ;
+	position : fixed ;
+	right : 0 ;
+	bottom : 0 ;
+	}
+	footer{
+	font-size : 2em ;
+	font-family : "微软雅黑" ;
+	text-align : center ;
+	}
+	div:hover{
+	background-color : #54de62 ;
+	color : yellow ;
+	}
+  </style>
+ </head>
+ <body>
+  <div id="header" class="">
+   <img src="img/gaokao.jpg" alt="">
+  </div>
+  <div id="box1" class="">
+	学习要点
+  </div>
+  <div id="box2" class="">
+	<div id="" class="love">
+	 语文之
+	</div>
+	<div id="" class="left">
+	 无敌模板
+	</div>
+	<div id="" class="right">
+	 无解运算
+	</div>
+	<div id="" class="you">
+	 数学之
+	</div>
+  </div>
+  <div id="box3" class="">
+   <div id="yingyu" class="love">
+    英语之
+   </div>
+   <div id="" class="left">
+	万能记忆
+   </div>
+   <div id="" class="right">
+	顶级思维
+   </div>
+   <div id="" class="you">
+	物理之
+   </div>
+  </div>
+  <div id="box4" class="">
+   <div id="huaxue" class="love">
+	化学之
+   </div>
+   <div id="" class="left">
+	顺溜口诀
+   </div>
+   <div id="" class="right">
+	回归课本
+   </div>
+   <div id="" class="you">
+	生物之
+   </div>
+  </div>
+  <div id="box5" class="">
+	<img src="img/shanshui.jpg">
+  </div>
+  <div id="box6" class="">
+   <div id="box7" class="">
+	 学习要点
+   </div>
+   <div id="work" class="">
+	 <img src="img/work.jpg" alt="">
+   </div>
+   <div id="" class="li">
+	 01.精读教科书
+   </div>
+   <div id="" class="li">
+	 02.学会自己整理,搭建知识框架
+   </div>
+   <div id="" class="li">
+	 03.勤动笔,不要偷懒
+   </div>
+   <div id="" class="li">
+	 04.谨慎使用高科技产品
+   </div>
+   <div id="" class="li">
+	 05.学会合理规划时间
+   </div>
+  </div>
+  <div id="ke" class="">
+	<a href="#"><img src="img/ke.jpg"></a>
+  </div>
+  <footer>
+	江西科技师范大学元宇宙产业学院<br>
+	22计科2班刘志敏
+  </footer>
+ </body>
+</html>
