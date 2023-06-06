@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>page3</title>
   <style type="text/css">
+    .content{
+	font-size : 1.3em ;
+	position : relative ;
+	left : 100px ;
+	top : 120px ;
+	}
 	input:focus{
     color : #40e0b0 ;
     background-color : pink ;
@@ -11,24 +17,28 @@
 	li{
 	list-style : none ;
 	}
+	body{
+	background-image : url(img/beijin.jpg);
+	}
   </style>
  </head>
  <body>
-  表单域就是
-  <strong>一个区域</strong>
-  <form method="post" action="" name="">
-	name:<input type="text" maxlength="6" value="yourname"><br>
-	key:<input type="password" maxlength="8"><br>
-	sex:<input type="radio" name="sex" id="man"> <label for="man">m</label>
+ <div id="" class="content">
+	表单域就是
+   <strong>一个区域</strong>
+   <form method="post" action="" name="">
+	 name:<input type="text" maxlength="6" value="yourname"><br>
+	 key:<input type="password" maxlength="8"><br>
+	 sex:<input type="radio" name="sex" id="man"> <label for="man">m</label>
 	    <input type="radio" name="sex" id="girl"> <label for="girl">g</label><br>
-	hobby:<label for="eat">eat</label><input type="checkbox" name="" value="" id="eat">
+	 hobby:<label for="eat">eat</label><input type="checkbox" name="" value="" id="eat">
 	      <label for="sleep">sleep</label><input type="checkbox" id="sleep">
 		  <label for="play">play</label><input type="checkbox" id="play"><br>
-    <input type="submit" value="free registration"> 
-	<input type="button" value="no mean button"><br>
-	<input type="reset" value="rewrite"><br>
-	上传文件:<input type="file"><br>
-	你来自哪:<select name="">
+     <input type="submit" value="free registration"> 
+	 <input type="button" value="no mean button"><br>
+	 <input type="reset" value="rewrite"><br>
+	 上传文件:<input type="file"><br>
+	 你来自哪:<select name="">
 		<option value="" selected>北京
 		<option value="">上海
 		<option value="">河北
@@ -44,6 +54,7 @@
     今日反馈:
 	<textarea name="" rows="" cols="">
 	</textarea>
-  </form>
+   </form>
+  </div>
  </body>
 </html>
