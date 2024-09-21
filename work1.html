@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
 </head>
 <body>
     <header>
-        this is a page
+        welcome
     </header>
     <main>
       <p id="word">abandon</p>
@@ -37,7 +37,6 @@
       <p id="chinese">vt.离弃,丢弃;遗弃,抛弃;放弃</p>
     </main>
     <footer>
-        江西科技师范大学元宇宙产业学院-刘志敏<br>
         完成时间:2024年9月21日
     </footer>
     <script>
@@ -52,7 +51,8 @@
         let arrCET6 = [] ;
         fetch('cet6.txt')
         .then(res => res.text())
-        .then(txt => {
+        .then(txt => 
+            {
                 strCET6 = txt ;
                 arrCET6 =  strCET6.split('\r\n') ;
                 let rand = Math.floor(arrCET6.length * Math.random() ) ;
@@ -65,7 +65,7 @@
                     select('#word').textContent = word ;
                     select('#pron').textContent = pron ;
                     select('#chinese').textContent =chinese ;
-                }) ;
+            }) ;
    
     function select(str){
     let dom = document.querySelector(str);
