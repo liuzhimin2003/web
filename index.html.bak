@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>javascript</title>
+    <title>javascript1.1</title>
     <script>
         let timer = new Date();
         console.log(new Date() - timer);
@@ -29,7 +29,8 @@
 </head>
 <body>
     <header>
-        this is a page
+        this is a mypage<br>
+        <a href="work1.html" target="_blank">第三周作业</a>
     </header>
     <main>
         hello wrold
