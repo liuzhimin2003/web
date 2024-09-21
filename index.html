@@ -1,204 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <title>web实训</title>
-  <style type="text/css">
-   *{
-   margin : 0;
-   padding : 0;
-   }
-   li{
-   list-style : none ;
-   }
-   a{
-   text-decoration : none ;
-   }
-   a:visited{
-   color : none ;
-   }
-   body{
-   background-image : url(img/bg.jpg) ;
-   }
-   nav{
-   height : 80px ;
-   background-color : rgba(100,150,240,0.6);
-   border : 2px solid #6600ff ;
-   }
-   nav .like{
-   float : left ;
-   color : white ;
-   font-size : 35px ;
-   padding : 18px ;
-   margin-left : 70px ;
-   font-family : "幼圆";
-   font-weight : 900 ;
-   }
-   nav .you ul li{
-   float : right;
-   margin-top : 27px ;
-   margin-right : 35px;
-   }
-   nav .you ul li a{
-   font-size : 20px ;
-   font-family : "幼圆" ;
-   font-weight : bold ;
-   color : black ;
-   background-color : rgba(223,216,189,0.2) ;
-   padding : 11px ;
-   border: 2px solid white ;
-   transition-duration : 1.2s ;
-   }
-   nav .you ul li a:hover{
-   border : 2px solid #ffff00;
-   border-radius : 10px ;
-   color : #ff99ff ;
-   background-color : skyblue ;
-   text-shadow : 1px 0px 2px white ;
-   }
-   .message{
-   height : 60px ;
-   width : 245px ;
-   margin : 15px auto ;
-   background-color : rgba(153,51,250,0.2) ;
-   text-align : center ;
-   border : 2px solid yellow ;
-   border-radius : 8px ;
-   transition-duration : 1s ;
-   }
-   .message:hover{
-   background-color : rgba(255,250,250,0.95) ;
-   border : 2px solid pink ;
-   border-radius : 25px ;
-   width : 266px ;
-   }
-   .message a{
-   display : inline-block ;
-   height : 50px ;
-   font-size : 25px ;
-   font-weight : 900 ;
-   font-family : "幼圆" ;
-   color : white ;
-   margin-top : 15px ;
-   }
-   .message a:hover{
-   color : #cc33ff ; 
-   }
-   .nr{
-   height : 600px ;
-   width : 100% ;
-   border-top : 2px solid #00ffff ;
-   }
-   .boxleft{
-   width : 40% ;
-   height : 600px ;
-   float : left ;
-   /* border-right : 2px solid #00ffff ; */
-   box-sizing : border-box ;
-   }
-   .boxleft .content{
-   width : 80% ;
-   margin-left : auto ;
-   margin-right : auto ;
-   margin-top : 80px ;
-   color : #ccffff ;
-   font-size : 23px ;
-   font-family : "微软雅黑" ;
-   font-weight : 400 ;
-   letter-spacing : 3px ;
-   }
-   .boxleft a{
-   float : left ;
-   display : block ;
-   height : 135px ;
-   width : 100px ;
-   border : 2px solid white ;
-   text-align : center ;
-   margin-right : 13px ;
-   transition-duration : 1s ;
-   }
-   .boxleft a:hover{
-   border-left : 2px solid #ffff00 ;
-   border-right : 2px solid #ffff00 ;
-   }
-   .boxright{
-   width : 60% ;
-   height : 600px ;
-   float : right ;
-   position : relative ;
-   }
-   .boxright iframe{
-   display : block ;
-   width : 95% ;
-   margin : 5px auto ;
-   height : 400px ;
-   }
-   .boxright .bottom{
-   font-size : 25px ;
-   color : #ffff00 ;
-   text-align : center ;
-   margin : 30px auto 0 auto;
-   padding : 5px ;
-   }
-   footer{
-   display : block ;
-   height : 70px ;
-   background-color : rgba(119,136,153,0.9) ;
-   text-align : center ;
-   }
-   footer h3{
-   display : block ;
-   font-size : 25px ;
-   color : white ;
-   margin-top : 5px ;
-   margin-bottom : 8px ;
-   }
-   footer p{
-   font-size : 20px ;
-   color : white ;
-   }
-  </style>
- </head>
- <body>
-  <header>
-   <nav>
-    <div id="" class="like">
-		Spider-man|
-    </div>
-	<div id="" class="you">
-		<ul>
-			<li><a href="page1.html" target="small" >少年游</a></li>
-			<li><a href="page2.html" target="small" >终不似</a></li>
-			<li><a href="page3.html" target="small" >同载酒</a></li>
-			<li><a href="page4.html" target="small" >桂花</a></li>
-			<li><a href="page5.html" target="small" >欲买</a></li>
-		</ul>
-	</div>
-   </nav>
-  </header>
-  <div id="" class="message">
-	<a href="spider.html">刘志敏的联系方式</a>
-  </div>
-  <div id="" class="nr">
-   <div id="" class="boxleft">
-    <div id="" class="content">
-	<a href="man.html" target="small"><img src="img/myface.jpg"></a>
-	本人综合素质佳、意志力较坚强且不轻易放弃每一分希望的人.我现在仍是一名在校生,故对知识与社会经验不够,但本人充满青春的活力.具备良好的人品，乐于与人沟通,生活在群体之中,能够与人进行客观直接的沟通，具有较强的团队管理能力和与人合作的精神,能够积极互动努力达成团队的目标.忠实做事是我的人生准则,自强不息是本人的追求.
-    </div>
-   </div>
-   <div id="" class="boxright">
-    <iframe name="small" frameborder="0" src="moren.html"> </iframe>
-    <div id="" class="bottom">
-    锦瑟无端五十弦，一弦一柱思华年。</br>
-	庄生晓梦迷蝴蝶，望帝春心托杜鹃。</br>
-	沧海月明珠有泪，蓝田日暖玉生烟。</br>
-    此情可待成追忆？只是当时已惘然。
-    </div>
-   </div>
-  </div>
-  <footer>
-  <h3>江西科技师范大学元宇宙产业学院</h3>
-  <p>22计算机科学与技术2班刘志敏 完成于:2023-6-6</p>
-  </footer>
- </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript1.1</title>
+    <script>
+        let timer = new Date();
+        console.log(new Date() - timer);
+    </script>
+    <style>
+        *{
+            text-align: center;
+            font-size: 25px ;
+        }
+        header{
+            height: 20% ;
+            background-color: aqua ;
+        }
+        main{
+            background-color: blueviolet;
+            height: 60% ;
+        }
+        footer{
+            background-color: coral;
+            height: 20% ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        this is a page
+    </header>
+    <main>
+        hello wrold
+    </main>
+    <footer>
+        江西科技师范大学元宇宙产业学院-刘志敏<br>
+        完成时间:2024年9月21日
+    </footer>
+    <script>
+        document.body.style.height= innerHeight + 'px' ;
+        console.log("渲染web网页元素时间"+(new Date() - timer) + " ms! ");
+        let bigbang = new Date();
+        for (let i = 1; i <= 1e8; i++) 
+        {
+        }
+        console.log("CPU从1数到1亿:" + (new Date() - bigbang) + "ms!");
+    </script>
+</body>
 </html>
