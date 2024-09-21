@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript1.1</title>
+    <script>
+        let timer = new Date();
+        console.log(new Date() - timer);
+    </script>
+    <style>
+        *{
+            text-align: center;
+            font-size: 25px ;
+        }
+        header{
+            height: 20% ;
+            background-color: aqua ;
+        }
+        main{
+            background-color: blueviolet;
+            height: 60% ;
+        }
+        footer{
+            background-color: coral;
+            height: 20% ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        this is a page
+    </header>
+    <main>
+      <p id="word">abandon</p>
+      <p id="pron">/ə'bændən/</p>
+      <p id="chinese">vt.离弃,丢弃;遗弃,抛弃;放弃</p>
+    </main>
+    <footer>
+        江西科技师范大学元宇宙产业学院-刘志敏<br>
+        完成时间:2024年9月21日
+    </footer>
+    <script>
+        document.body.style.height= innerHeight + 'px' ;
+        console.log("渲染web网页元素时间"+(new Date() - timer) + " ms! ");
+        let bigbang = new Date();
+        for (let i = 1; i <= 1e8; i++) 
+        {
+        }
+        console.log("CPU从1数到1亿:" + (new Date() - bigbang) + "ms!");
+        let strCET6 = '' ;
+        let arrCET6 = [] ;
+        fetch('cet6.txt')
+        .then(res => res.text())
+        .then(txt => {
+                strCET6 = txt ;
+                arrCET6 =  strCET6.split('\r\n') ;
+                let rand = Math.floor(arrCET6.length * Math.random() ) ;
+                let cetWord = arrCET6[rand] ;
+                let begin = cetWord.indexOf('\t') ;
+                let end =  cetWord.lastIndexOf('\t') ;
+                let word = cetWord.slice(0,begin) ;
+                let pron = cetWord.slice(begin+1,end) ;
+                let chinese = cetWord.slice(end+1) ;
+                    select('#word').textContent = word ;
+                    select('#pron').textContent = pron ;
+                    select('#chinese').textContent =chinese ;
+                }) ;
+   
+    function select(str){
+    let dom = document.querySelector(str);
+    return dom ;
+   }
+    </script>
+</body>
+</html>
