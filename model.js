@@ -108,7 +108,7 @@
         let s = "" ;
         if (CET6[pos].timer){
           let d = CET6[pos].timer ;
-          s = '哟，您在'+ d.getFullYear() +'年' + ( d.getMonth() + 1 ) + '月' + (d.getDate())+ '日'+' 学过'  ; 
+          s = '哟，您在'+ d.getFullYear() +'年' + ( d.getMonth() + 1 ) + '月' + (d.getDate())+ '日' +(d.getHours())+'时'+(d.getMinutes())+'分'+(d.getSeconds())+'秒'+' 学过'  ;  
         }else{
             s = "哟，您这个单词没学过。"
         }
