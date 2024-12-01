@@ -143,7 +143,7 @@
             hard ++ ;
          }
     }
-    let s = Model.user + '状态: ' +easy +'熟悉/'+ normal +'一般/'+ hard+ '陌生'    ;
+    let s = Model.user + '学过单词情况: ' +easy +'熟悉/'+ normal +'知道/'+ hard+ '陌生'    ;
     select('p#title').textContent = s ;
     setTimeout(()=>{
         select('p#title').textContent = 'CET6-轻轻松松背单词';
