@@ -1,7 +1,7 @@
 //Model用于记录程序的数据和运行状态
     let Model = { 
         timerBegin : new Date() ,
-        numOfLearning : 25,
+        numOfLearning : 20,
         learning : [] ,
         learned : []
     } ;
